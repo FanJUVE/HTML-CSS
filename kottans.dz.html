@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pure html by Shepard</title>
+  <meta name="description" content="Site of pure html">
+  <meta name="keywords" content="HTML, site, pure, kottans">
+  <meta name="author" content="Shepard">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>О проекте</h1>
+    <img src="22k.jpg" alt="Some image" />
+    <p>&#44;Lorem ipsum&#44; dolor sit amet, consectetur adipiscing elit. Phasellus convallis nibh vehicula laoreet <b>pellentesque</b>. Nullam justo justo, viverra tincidunt magna et, tincidunt ultrices justo.
+    <p><i>Morbi placera</i>t convallis elit. Aenean dignissim enim ligula, vel tempus odio ornare a. Duis aliquam, tellus fermentum dapibus porta, tellus purus auctor elit, in rhoncus est tellus ut quam. In eu nisl ac sem dignissim pellentesque. Ut malesuada, felis ac cursus mattis, sem arcu ullamcorper dui, vel scelerisque risus metus a elit.
+    <p>Donec id luctus tortor. <u>Lorem ipsum dolor</u> sit amet, consectetur adipiscing elit. Cras faucibus metus a urna euismod, ac tincidunt nisi euismod. Fusce quis volutpat mi. Nullam vitae turpis dapibus, tincidunt mauris vitae, aliquam orci. Vestibulum enim lorem, lacinia eget felis et, rutrum facilisis sapien.
+  </section>
+
+  <section id="faq">
+    <h1>FAQ</h1>
+    <dl>
+      <dt>Ques1</dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nibh vehicula laoreet <b>pellentesque</b>. Nullam justo justo, viverra tincidunt magna et, tincidunt ultrices justo.
+        </dd>
+    </dl>
+    <dl>
+      <dt>Ques2</dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nibh vehicula laoreet <b>pellentesque</b>. Nullam justo justo, viverra tincidunt magna et, tincidunt ultrices justo.
+        </dd>
+    </dl>
+    <dl>
+      <dt>Ques3</dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nibh vehicula laoreet <b>pellentesque</b>. Nullam justo justo, viverra tincidunt magna et, tincidunt ultrices justo.
+        </dd>
+    </dl>
+    <dl>
+      <dt>Ques4</dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nibh vehicula laoreet <b>pellentesque</b>. Nullam justo justo, viverra tincidunt magna et, tincidunt ultrices justo.
+        </dd>
+    </dl>
+  </section>
+
+  <section id="contacts">
+    <h1>Контакты</h1>
+    <table>
+      <tr>
+        <td width="30%">
+          Город:
+        </td>
+        <td>
+          Киев
+        </td>
+      </tr>
+      <tr>
+        <td width="30%">
+          Адрес:
+        </td>
+        <td>
+          Большая Васильковская 5а, кв. 15
+        </td>
+      </tr>
+      <tr>
+        <td width="30%">
+          Телефон:
+        </td>
+        <td>
+          0643452345
+        </td>
+      </tr>
+      <tr>
+        <td width="30%">
+          Email:
+        </td>
+        <td>
+          <s>old_email@example.com</s><br>
+          <a href="mailto:old_email@example.com">old_email@example.com</a>
+        </td>
+      </tr>
+      <tr>
+        <td width="30%">
+          Skype:
+        </td>
+        <td>
+          test_html
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="register">
+    <h1>Регистрация</h1>
+    <form id="registerForm" name="registerForm" action="/#register" method="post">
+      <div>
+        <label for="reg-name">Имя</label>
+        <input id="reg-name" required name="name" type="text" placeholder="Введите имя" />
+      </div>
+      <div>
+        <label for="reg-email">Email</label>
+        <input id="reg-email" required name="email" type="email" placeholder="Введите email" />
+      </div>
+      <div>
+        <label for="reg-password">Пароль</label>
+        <input id="reg-password" required name="password" type="password" placeholder="Введите пароль" />
+      </div>
+      <div>
+        <label for="reg-password-confirm">Подтверждение</label>
+        <input id="reg-password-confirm" required name="password_confirm" type="password" placeholder="Подтвердите пароль" />
+      </div>
+      <div>Пол<br/>
+        <input value="male" required type="radio" name="sex" id="reg-sex-m"><label for="reg-sex-m">Мужской</label>
+        <input value="female" required type="radio" name="sex" id="reg-sex-w"> <label for="reg-sex-w">Женский</label>
+      </div>
+      <div>
+        <label for="reg-lang">Основной язык</label>
+        <select id="reg-lang" name="lang">
+          <option value="2">Беларуский</option>
+          <option value="1" selected>Українська</option>
+          <option value="3">Русский</option>
+        </select>
+      </div>
+      <div>
+        <label for="reg-about">О себе</label><br/>
+        <textarea id="reg-about" name="about"></textarea>
+      </div>
+      <input type="submit" value="Отправить">
+    </form>
+  </section>
+
+
+  <section id="feedback">
+    <h1>Обратная связь</h1>
+    <form id="feedbackForm" name="feedbackForm" action="/#feedback" method="post">
+      <div>
+        <label for="reg-name">Имя</label>
+        <input id="reg-name" required name="name" type="text" placeholder="Введите имя" />
+      </div>
+      <div>
+        <label for="reg-email">Email</label>
+        <input id="reg-email" required name="email" type="email" placeholder="Введите email" />
+      </div>
+      <div>
+        <label for="reg-comment">Комментарий</label><br/>
+        <textarea id="reg-comment" required name="comment"></textarea>
+      </div>
+      <input type="submit" value="Отправить">
+    </form>
+  </section>
+
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+    <div>&copy; Shepard, 2014</div>
+  </footer>
+</body>
+</html>
