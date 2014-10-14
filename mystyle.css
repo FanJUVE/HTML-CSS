@@ -48,10 +48,10 @@ img {
 }
 
 a {
-  color: #ee00ee;
+  color: #e0e;
 }
 a:hover {
-  color: #ff2277;
+  color: #f27;
 }
 
 .container {
@@ -85,7 +85,7 @@ nav ul li:first-child {
 }
 
 nav a {
-  color: #0000ff;
+  color: #00f;
 }
 
 nav.small {
