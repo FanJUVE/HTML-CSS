@@ -1,0 +1,150 @@
+/* Reset
+A part of standart css-reset ------------------------ */
+
+html, body, div, span, object, iframe,
+p, blockquote, pre,
+a, code, em, img, small, strike, strong,
+sub, sup, tt, var, b, u, i,
+ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, canvas, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main styles
+------------------------------ */
+
+body {
+  background: #f6f6f6;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+p:first-letter {
+  font-size: 1.5em;
+}
+
+.image {
+  text-align: center;
+}
+
+img {
+  margin: 20px 20px 20px 0;
+}
+
+a {
+  color: #ee00ee;
+}
+a:hover {
+  color: #ff2277;
+}
+
+.container {
+  padding: 0 20px;
+  width: 960px;
+  position: relative;
+  margin: auto;
+}
+
+dt {
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+
+/* Nav
+----------- */
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  padding: 10px 20px;
+  float: left;
+}
+
+nav ul li:first-child {
+  padding-left: 0;
+}
+
+nav a {
+  color: #0000ff;
+}
+
+nav.small {
+  margin: 20px 0;
+  font-size: 0.8em;
+}
+
+footer:after {
+  content: "use after with footer";
+  margin: 20px 0px;
+  display: block;
+}
+
+
+/* Form & table
+-------------- */
+form, table {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+form:before {
+  content: "*Пожалуйста, заполните все поля формы";
+  color: red;
+  display: block;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+form div {
+  clear: both;
+  margin-bottom: 20px;
+}
+form label {
+  margin-left: 10px;
+  line-height: 40px;
+  height: 40px;
+}
+form label.radio {
+  margin-right: 20px;
+}
+form input, form select {
+  padding: 10px;
+}
+form input[type="text"],
+form input[type="email"],
+form select,
+form input[type="password"] {
+  min-width: 150px;
+  display: block;
+  float: left;
+}
+
+textarea {
+  height: 50px;
+  width: 250px;
+}
+
+table {
+  width: 100%;
+}
